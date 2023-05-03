@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%-include ('header.ejs')%>
+  <body>
+    <header>
+      <h1>GameHub</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Accueil</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div>
+      <form class="configuration">
+        <input
+          type="number"
+          value=""
+          name="gridSize"
+          id="gridSize"
+          placeholder="Taille de la grille"
+        />
+        <input
+          type="number"
+          name="pixelSize"
+          id="pixelSize"
+          placeholder="Taille des pixels"
+        />
+        <input
+          type="submit"
+          name="submitButton"
+          id="submitButton"
+          value="Valider"
+        />
+      </form>
+    </div>
+    <div id="invader">
+      <div class="pixel-container"></div>
+      <div class="color-picker">
+        <div class="picker blue" data-color="plain"></div>
+        <div class="picker red" data-color="empty"></div>
+        <div class="picker green" data-color="light"></div>
+        <div class="picker purple" data-color="highlight"></div>
+      </div>
+    </div>
+    <script src="/js/invader.js"></script>
+  </body>
+</html>

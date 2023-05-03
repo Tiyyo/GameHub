@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <%-include('header.ejs')%>
+
+  <body>
+    <header>
+      <h1>GameHub</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <% for (let i = 0; i < games.length; i++) { %>
+          <li>
+            <a href="/game/<%= games[i].name %>"><%= games[i].title %></a>
+          </li>
+          <% } %>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h3>Index</h3>
+    </main>
+  </body>
+</html>

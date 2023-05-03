@@ -1,0 +1,57 @@
+.pixel-container {
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    
+    
+
+}
+#invader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    row-gap: 5em;
+}
+.pixel{
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgb(78, 78, 78);
+    background-color: rgb(168, 166, 166);
+}
+.pixel.isActive {
+    background-color: black;
+
+}
+
+.color-picker {
+    display: flex;
+    justify-content: space-evenly;
+    border:1px solid black;
+    height: 4em;
+    align-self: flex-end;
+    width: 15em;
+    align-items: center;
+}
+.picker{
+    height: 2.5em;
+    width: 2.5em;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.picker.isActive {
+    height: 3em;
+    width: 3em;
+}
+.picker.blue {
+    background-color: rgb(91, 110, 195);
+}
+.picker.red {
+    background-color: rgb(214, 129, 123);
+}
+.picker.green {
+    background-color: rgb(69, 119, 61);
+}
+.picker.purple {
+    background-color: rgb(151, 52, 151);
+}
