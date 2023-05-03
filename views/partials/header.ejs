@@ -5,9 +5,7 @@
   <title>Games</title>
   <link rel="stylesheet" href="/css/style.css" />
 
-  <% if (name === "diceRoller") { %>
-  <link rel="stylesheet" href="/css/diceRoller.css" />
-  <% } else if (name === "invader") { %>
-  <link rel="stylesheet" href="/css/invader.css" />
+  <% if (config.name !== "fourchette") { %>
+  <link rel="stylesheet" href="/css/<%=config.css%>" />
   <% } %>
 </head>
